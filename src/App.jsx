@@ -31,7 +31,7 @@ class App extends React.Component {
       'Content-Type': 'application/json'
     }
 
-    axios.get('http://teclabs.com.br/html/microservices/users.php', { headers })
+    axios.get('https://teclabs.com.br/html/microservices/users.php', { headers })
     .then(res => {
       const persons = res.data;
       this.setState({ persons })
@@ -76,7 +76,7 @@ class App extends React.Component {
       MESSAGE:this.state.message
     };
 
-    axios.post('http://teclabs.com.br/html/microservices/email.php', data, { headers })
+    axios.post('https://teclabs.com.br/html/microservices/email.php', data, { headers })
       .then(res => {
         alert(res.data)
     })
