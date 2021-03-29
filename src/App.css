@@ -1,0 +1,11 @@
+.table input,
+.table select,
+.table textarea,
+.card-body input,
+.card-body select,
+.card-body textarea,
+.modal-body input,
+.modal-body select,
+.modal-body textarea {
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.15);
+}
